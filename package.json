@@ -1,7 +1,7 @@
 {
-  "name": "bare-rails-react",
+  "name": "BY-Campers",
   "version": "1.0.0",
-  "description": "Bare Rails and React app",
+  "description": "React on Rails app",
   "main": "webpack.config.js",
   "engines": {
     "node": "7.9.0"
@@ -17,6 +17,11 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "react": "^15.6.1",
+    "react-materialize": "^1.0.6",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.10",
+    "react-search-input": "^0.11.2",
     "react-dom": "^15.6.1",
     "webpack": "^2.6.0",
     "babel-core": "^6.5.1",
