@@ -19,7 +19,7 @@
         <ul class="left hide-on-med-and-down compress">
           <% if current_user %>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-            <li><%= link_to "Profile", current_user %> </li>
+            <li><%= link_to "Profile", root_path %> </li>
             <% if current_user.admin %>
               <li><%= link_to "All Users List", root_path %></li>
             <% else %>
@@ -33,11 +33,11 @@
         <ul class="side-nav flow-text" id="mobile-demo">
           <% if current_user %>
             <% if current_user.admin %>
-              <li><%= link_to "All Users List", users_path %></li>
+              <li><%= link_to "All Users List", root_path %></li>
             <% else %>
               <li><%= link_to "My clients", root_path %> </li>
             <% end %>
-            <li><%= link_to "Profile", current_user %> </li>
+            <li><%= link_to "Profile", root_path %> </li>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
           <% else %>
             <li><%=link_to "Sign In", new_user_session_path %></li>
