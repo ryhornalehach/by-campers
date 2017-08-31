@@ -1,3 +1,37 @@
 @import "materialize";
 
 // @import "*";
+
+body {background-color: #555555;}
+
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+
+// .blacktext {
+//   color: black;
+// }
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.blackfield {
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  width: auto;
+  padding: 15px;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+}

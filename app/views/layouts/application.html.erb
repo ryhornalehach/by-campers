@@ -11,12 +11,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
-  <header>
-    <nav class="nav">
+  <div class="navbar-fixed">
+    <nav class="transparent z-depth-0 black-text">
       <div class="nav-wrapper">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <a href="/" class="brand-logo right">BY-Campers</a>
-        <ul class="left hide-on-med-and-down compress">
+        <ul class="right hide-on-med-and-down compress">
           <% if current_user %>
             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
             <li><%= link_to "Profile", root_path %> </li>
@@ -46,11 +45,24 @@
         </ul>
       </div>
     </nav>
-  </header>
+  </div>
+
+
+
+  <!-- <section class="video-container2">
+    <img src="<%= asset_path('campervan.jpg')%>">
+    <div class="callout">
+      <div>
+        <p>Object-Fit is the CSS Background-Size: Cover for Inline Images &amp; Videos.
+        <br>It's not Microsoft friendly.</p>
+      </div>
+    </div>
+  </section> -->
+
+
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
     <%= yield %>
   </body>
   <script>
