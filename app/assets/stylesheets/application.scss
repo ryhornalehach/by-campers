@@ -19,7 +19,7 @@
   z-index: 10;
 }
 
-.blackfield-right-bottom {
+div.blackfield-right-bottom {
   color: white;
   background-color: black;
   opacity: 0.5;
@@ -30,12 +30,17 @@
   right: 20px;
 }
 
-.blackfield-main {
-  color: white;
+div.blackfield-main {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.55;
+  filter: alpha(opacity=55);
   width: 90%;
   padding: 15px;
   margin: auto;
   margin-top: 80px;
+}
+
+div.blackfield-main h1 {
+  color: white;
+  opacity: 1;
 }
