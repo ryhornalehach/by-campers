@@ -2,16 +2,10 @@
 
 // @import "*";
 
-body {background-color: #555555;}
-
 .navbar-fixed {
   position: absolute;
   z-index: 999999999;
 }
-
-// .blacktext {
-//   color: black;
-// }
 
 .callout {
   position: relative;
@@ -25,7 +19,7 @@ body {background-color: #555555;}
   z-index: 10;
 }
 
-.blackfield {
+.blackfield-right-bottom {
   color: white;
   background-color: black;
   opacity: 0.5;
@@ -34,4 +28,14 @@ body {background-color: #555555;}
   position: fixed;
   bottom: 60px;
   right: 20px;
+}
+
+.blackfield-main {
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  margin-top: 80px;
 }
