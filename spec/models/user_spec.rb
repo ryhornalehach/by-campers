@@ -45,4 +45,12 @@ RSpec.describe User, :type => :model do
     subject.email = nil
     expect(subject).to_not be_valid
   end
+
+  it "is not valid with wrong params" do
+    expect{ User.new(
+        first_name: "Jason", last_name: "Bourne", wrong_param: 'NotValid',
+        address: '100 Main st.', city: 'Lowell', state: 'MA', zip: '01802',
+        phone: '857-123-1234', email: "jbourne@hotmail.com", password: "test123"
+      ) }.to raise_error(ActiveModel::UnknownAttributeError)
+  end
 end
