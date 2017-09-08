@@ -11,6 +11,7 @@ describe('MainPage', () => {
 
   it('should render a MainPage component that has a <h2> with welcome text', () => {
     expect(wrapper.find('h2')).toBePresent()
+    expect(wrapper.find('h2').length).toEqual(1);
     expect(wrapper.text()).toMatch('Welcome to BY-Campers!')
   })
 
