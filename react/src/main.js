@@ -1,10 +1,11 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './containers/App'
 
 $(function() {
   ReactDOM.render(
-    <div className='blackfield-main'><h1>Welcome</h1></div>,
+    <App />,
     document.getElementById('app')
   );
 });
