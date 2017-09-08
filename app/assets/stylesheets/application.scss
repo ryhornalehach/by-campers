@@ -37,10 +37,14 @@ div.blackfield-main {
   width: 90%;
   padding: 15px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 div.blackfield-main h1,h2,p {
   color: white;
   opacity: 1;
+}
+
+div.blackfield-main h1,h2 {
+  text-align: center;
 }
